@@ -1,0 +1,6 @@
+dploy.yaml
+pusakacms/system/application/sessions/*
+pusakacms/www/media/default/thumbs/*
+pusakacms/www/media/default/files/*
+.phpintel
+.phpintel/*

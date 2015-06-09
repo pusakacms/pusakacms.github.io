@@ -1,0 +1,14 @@
+{
+	"config": {
+        "vendor-dir": "system/vendor"
+    },
+	"name": "nyankod/pusakacms",
+	"description": "flat file CMS built on top of CodeIgniter.",
+	"keywords": ["nyankod", "pusaka", "pusakacms"],
+	"license": "MIT",
+	"require": {
+        "pyrocms/lex": "2.3.*",
+        "erusev/parsedown": "1.1.0",
+        "nyankod/jsonfiledb": "0.2.*"
+	}
+}

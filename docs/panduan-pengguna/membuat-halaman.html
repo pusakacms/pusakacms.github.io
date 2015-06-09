@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>Membuat Halaman - PusakaCMS</title>
+
+<meta name="description" content="PusakaCMS adalah Content Management System (CMS) dengan konten berbasis file, tidak memerlukan instalasi database server dan dilengkapi dengan fitur multisite dan export ke HTML statis." />
+<meta name="keywords" content="pusakacms, cms, flat file cms, content management system, file based cms, multisite cms, codeigniter cms, export to html" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:title" content="Membuat Halaman - PusakaCMS" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="../../docs/panduan-pengguna/membuat-halaman.html" />
+<meta property="og:image" content="../../sites/default/content/files/cover.png" />
+<meta property="og:description" content="PusakaCMS adalah Content Management System (CMS) dengan konten berbasis file, tidak memerlukan instalasi database server dan dilengkapi dengan fitur multisite dan export ke HTML statis." />
+<meta property="og:site_name" content="Membuat Halaman - PusakaCMS" />
+
+<!-- Bootstrap core CSS -->
+<link href="../../media/pusaka/themes/keris/assets/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../../media/pusaka/themes/keris/assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="../../media/pusaka/themes/keris/assets/css/style.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="../../media/pusaka/themes/keris/assets/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../media/pusaka/themes/keris/assets/img/favicon.ico" type="image/x-icon">
+
+<script src="../../media/pusaka/themes/keris/assets/js/jquery.min.js"></script>
+<script src="../../media/pusaka/themes/keris/assets/js/bootstrap.min.js"></script>
+<script>
+	var links = document.links;
+	for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+		if (links[i].hostname != window.location.hostname) {
+			links[i].target = '_blank';
+		} 
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51093490-2', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+	<div class="container">		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../../">PusakaCMS</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class=" dropdown active"  ><a class=" data-toggle="dropdown" role="button" active"  data-toggle="dropdown" role="button" href="../../docs.html" target="_self">Docs</a><ul class="dropdown-menu" role="menu"><li class="" ><a class=""  href="../../docs/apa-itu-pusaka.html" target="_self">Apa itu Pusaka?</a></li><li class=" active" ><a class=" active"  href="../../docs/panduan-pengguna.html" target="_self">Panduan Pengguna</a></li></ul></li><li class="" ><a class=""  href="https://github.com/nyankod/pusakacms/releases" target="_blank">Download</a></li><li class="" ><a class=""  href="../../themes.html" target="_self">Tema</a></li><li class="" ><a class=""  href="../../blog.html" target="_self">Blog</a></li>				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+	<div class="container">		
+		<div class="row">
+			<div class="col-md-3">
+				<div class="sidebar">
+<ul class="nav nav-pills nav-stacked">
+	<li class="list "  ><a class=" role="button""  role="button" href="../../docs/apa-itu-pusaka.html">Apa Itu Pusaka</a><ul class="nav nav-pills nav-stacked" role="menu"><li class="list" ><a class=""  href="../../docs/apa-itu-pusaka/fitur.html">Fitur</a></li><li class="list" ><a class=""  href="../../docs/apa-itu-pusaka/kontribusi.html">Kontribusi</a></li><li class="list" ><a class=""  href="../../docs/apa-itu-pusaka/showcase.html">Showcase</a></li><li class="list" ><a class=""  href="../../docs/apa-itu-pusaka/lisensi.html">Lisensi</a></li><li class="list" ><a class=""  href="../../docs/apa-itu-pusaka/changelog.html">Changelog</a></li></ul></li><li class="list  active"  ><a class=" role="button" active"  role="button" href="../../docs/panduan-pengguna.html">Panduan Pengguna</a><ul class="nav nav-pills nav-stacked" role="menu"><li class="list" ><a class=""  href="../../docs/panduan-pengguna/instalasi-di-komputer-lokal.html">Instalasi Di Komputer Lokal</a></li><li class="list active" ><a class=" active"  href="../../docs/panduan-pengguna/membuat-halaman.html">Membuat Halaman</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/struktur-file.html">Struktur File</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/format-penulisan.html">Format Penulisan</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/mengatur-kategori.html">Mengatur Kategori</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/posting-blog.html">Posting Blog</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/mengatur-navigasi.html">Mengatur Navigasi</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/upgrade-sistem.html">Upgrade Sistem</a></li><li class="list" ><a class=""  href="../../docs/panduan-pengguna/konfigurasi.html">Konfigurasi</a></li></ul></li></ul>
+</div>			</div>
+			<div class="col-md-9 the-content">
+				<h1>Membuat Halaman</h1>
+				
+				<p>Semua file yang terkait dengan halaman disimpan di <code>content/pages/</code>. Folder ini berisi file <code>index.html</code> dan <code>nav.json</code> (untuk pengaturan navigasi).</p>
+<p><strong>Format penamaan folder dan file:</strong>     </p>
+<ul>
+<li>Huruf non-kapital     </li>
+<li>Spasi diganti <em>dash</em> (strip); ex. <code>about-me</code>, <code>cara-pemesanan-luar-bandung</code>     </li>
+<li>
+<p>Secara <em>default</em>, nama folder atau file akan menjadi judul halaman yang ditampilkan pada area navigasi     </p>
+</li>
+<li>
+<p><strong>Membuat halaman tanpa sub-halaman</strong>     <br />
+Buat file baru ( .md, .html, atau textile) di folder <code>pages/</code> </p>
+</li>
+<li>
+<p><strong>Membuat halaman yang memiliki sub-halaman</strong>     <br />
+Sub-halaman terletak pada sebelah kiri halaman. Sub-halaman dapat memiliki sub lagi.         <br />
+Buat folder baru di dalam folder <code>pages/</code> dengan nama sesuai dengan judul halaman     <br />
+Sub-halaman dibuat di dalam folder baru tersebut     <br />
+Sub-halaman berbentuk file</p>
+</li>
+<li><strong>Merubah halaman tanpa sub-halaman menjadi halaman yang memiliki sub-halaman</strong>    <br />
+Buat folder baru di <code>pages/</code> dengan nama sesuai dengan judul halaman     <br />
+Pindahkan file halaman tanpa sub-halaman ke dalam folder tersebut, kemudian ganti namanya menjadi <code>index.html</code></li>
+</ul>			</div>
+		</div>
+	</div>
+	
+	<div class="pusaka-footer text-center">	
+	&copy;2015 <a href="../../.html">PusakaCMS</a> by <a href="http://www.nyankod.com" target="_blank">Nyankod</a></div></body>
+</html>
